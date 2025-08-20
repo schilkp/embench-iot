@@ -750,6 +750,7 @@ def main():
     if successful:
         log.info('All benchmarks built successfully')
 
+    return os.EX_OK if successful else os.EX_SOFTWARE
 
 # Make sure we have new enough Python and only run if this is the main package
 
